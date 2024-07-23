@@ -1,1 +1,1 @@
-Tää on repo mun FullStack kurssin palautuksille, osaan 0.
+Tää on repo mun FullStack kurssin harjoitustehtävien palautuksille
