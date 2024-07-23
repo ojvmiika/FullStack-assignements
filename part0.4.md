@@ -24,6 +24,6 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: ["note list content":"ok","k","kk",...]
+    server-->>browser: ["content":"ok","k","kk",...]
     deactivate server
   
