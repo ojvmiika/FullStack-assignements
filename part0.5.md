@@ -20,17 +20,5 @@ participant server
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
   activate server
-  server-->>browser: [
-    {
-        "content": ".....",
-        "date": "2024-07-22T23:28:37.974Z"
-    },
-    {
-        "content": "dgxcj",
-        "date": "2024-07-22T23:32:25.169Z"
-    },
-    {
-        "content": "aaaa",
-        "date": "2024-07-22T23:52:28.526Z"
-    },....]
+  server-->>browser: [{"content": ".....", "date": "2024-07-22T23:28:37.974Z"},{"content": "dgxcj","date": "2024-07-22T23:32:25.169Z"},...]
   deactivate server
