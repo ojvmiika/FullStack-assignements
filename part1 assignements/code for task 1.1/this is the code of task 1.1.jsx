@@ -17,9 +17,9 @@ const App = () => {
   const Content =(props)=> {
     return (
       <div>
-        <p>{props[0].part} {props[0].exercises}</p>
-        <p>{props[1].part} {props[1].exercises}</p>
-        <p>{props[2].part} {props[2].exercises}</p>
+        <p>{props.parts[0].part} {props.parts[0].exercises}</p>
+        <p>{props.parts[1].part} {props.parts[1].exercises}</p>
+        <p>{props.parts[2].part} {props.parts[2].exercises}</p>
         </div>
     )
   }
@@ -27,7 +27,7 @@ const App = () => {
   const Total = (props) => {
     return(
       <div>
-        <p>Number of exercises {props[0].exercises + props[1].exercises + props[2].exercises}</p>
+        <p>Number of exercises {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}</p>
         </div>
     )
   }
