@@ -6,28 +6,28 @@ const App = () => {
     {part: 'State of a component', exercises: 14},
   ]
 
-  const Header =({course})=> {
+  const Header =(props)=> {
     return (
       <div>
-        <h1>{course}</h1>
+        <h1>{props.course}</h1>
         </div>
     )
   }
 
-  const Content =({parts})=> {
+  const Content =(props)=> {
     return (
       <div>
-        <p>{parts[0].part} {parts[0].exercises}</p>
-        <p>{parts[1].part} {parts[1].exercises}</p>
-        <p>{parts[2].part} {parts[2].exercises}</p>
+        <p>{props[0].part} {props[0].exercises}</p>
+        <p>{props[1].part} {props[1].exercises}</p>
+        <p>{props[2].part} {props[2].exercises}</p>
         </div>
     )
   }
 
-  const Total = ({parts}) => {
+  const Total = (props) => {
     return(
       <div>
-        <p>Number of exercises {parts[0].exercises + parts[1].exercises + parts[2].exercises}</p>
+        <p>Number of exercises {props[0].exercises + props[1].exercises + props[2].exercises}</p>
         </div>
     )
   }
