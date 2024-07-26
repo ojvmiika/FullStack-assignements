@@ -6,9 +6,9 @@ const App = () => {
     {part: 'State of a component', exercises: 14},
   ]
 
-  const Part = ({part, exercises}) => {
+  const Part = (props) => {
     return (
-      <p>{part} {exercises}</p>
+      <p>{props.part} {props.exercises}</p>
     )
   }
 
