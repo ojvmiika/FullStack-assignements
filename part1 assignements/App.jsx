@@ -6,6 +6,12 @@ const App = () => {
     {part: 'State of a component', exercises: 14},
   ]
 
+  const Part = ({part, exercises}) => {
+    return (
+      <p>{part} {exercises}</p>
+    )
+  }
+
   const Header =({course})=> {
     return (
       <div>
@@ -17,9 +23,9 @@ const App = () => {
   const Content =({parts})=> {
     return (
       <div>
-        <p>{parts[0].part} {parts[0].exercises}</p>
-        <p>{parts[1].part} {parts[1].exercises}</p>
-        <p>{parts[2].part} {parts[2].exercises}</p>
+        <Part part ={parts[0].part} exercises ={parts[0].exercises} />
+        <Part part ={parts[1].part} exercises = {parts[1].exercises} />
+        <Part part = {parts[2].part} exercises = {parts[2].exercises} />
         </div>
     )
   }
